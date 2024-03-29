@@ -7,3 +7,9 @@ func GetYesplaymusicService(playerUrl string, currentTracUrl string, splitStr st
 
 	return service, service.Init()
 }
+
+func GetLxService(playerUrl string) (GetLrcService, error) {
+	service := impl.NewGetLrcLX(playerUrl)
+
+	return service, service.Init()
+}

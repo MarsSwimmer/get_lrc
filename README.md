@@ -1,7 +1,7 @@
 # Get_Lrc
 show current lrc of YesPlayMusic on status bar for Ubuntu gnome.
 
-> Only work for YesPlayMusic.
+> Work for YesPlayMusic and LXMusic.
 
 This project is written in Go.
 
@@ -16,15 +16,28 @@ This project is written in Go.
 4. Open YesPlayMusic and play a song with LRC, you will see current lrc show on topbar, like this:
 ![preview](https://github.com/MarsSwimmer/get_lrc/assets/146618222/b6e43f94-e9b3-41cb-9e08-06621d936c56)
 
+5. Lx Music need enable open api from settings.
+
 
 ## Command Usage And Flags
+- Get current lrc sentence, auto choose source from all music player.
 ```
-get_lrc [command] [flags]
+get_lrc [flags]
+```
+
+- Specific music player
+```
+get_lrc [command] [flags] 
 ```
 
 ## Available Commands
 ```
-cmd         flags                                           
+cmd         flags  
+--                                         get current lrc sentence, it will auto choose source from all music player.
+            --yesplayPlayerUrl string      optional, specific the playerUrl of yesplaymusic (default "http://127.0.0.1:27232/player")
+            --lxPlayerUrl string           optional, specific the playerUrl of lx music (default "http://localhost:23330/status")                            
+            --showErrMsg                   optional, show error message when internal error.
+            -d, --defaultValue string      optional, specific the default value when internal error and not show error message
 
 yesplay                                    get YesPlayMusic's current lrc.
             --currentTrackUr               optional, specific the currentTrackUrl of yesplaymusic (default "http://127.0.0.1:10754/lyric?id=").
@@ -36,6 +49,12 @@ yesplay                                    get YesPlayMusic's current lrc.
             --showAll                      optional, show all sentence of lrc.
             --showErrMsg                   optional, show error message when internal error.
             --split                        optional, specific the split to merge multi lrc's sentence (default "|").
+
+lx                                         get lx's current lrc.
+            --playerUrl string             optional, specific the playerUrl of yesplaymusic (default "http://127.0.0.1:23330/status").
+            --showErrMsg                   optional, show error message when internal error.
+            -d, --defaultValue string      optional, specific the default value when internal error and not show error message
+
 
 help                                       Help about any command.
 ```

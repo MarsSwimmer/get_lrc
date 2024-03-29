@@ -10,13 +10,14 @@ This project is written in Go.
 
 2. Grant it executable permission and move it to `/usr/local/bin` dir.
 
-3. Install gnome extension `executor@raujonas.github.io` and config it add lrc output cmd: `echo "   🎤 $(get_lrc yesplay)    "`, like this:
+3. Install gnome extension `executor@raujonas.github.io` and config it add lrc output cmd: `echo "   🎤 $(get_lrc)    "`, like this:
 ![截图 2024-03-19 14-30-59](https://github.com/MarsSwimmer/get_lrc/assets/146618222/6a0ce857-9951-4806-95ce-b72c4af59f1d)
 
 4. Open YesPlayMusic and play a song with LRC, you will see current lrc show on topbar, like this:
 ![preview](https://github.com/MarsSwimmer/get_lrc/assets/146618222/b6e43f94-e9b3-41cb-9e08-06621d936c56)
 
 5. Lx Music need enable open api from settings.
+![截图 2024-03-30 01-57-23](https://github.com/MarsSwimmer/get_lrc/assets/146618222/802df09c-f1fc-49f3-8f11-558fce85dc43)
 
 
 ## Command Usage And Flags

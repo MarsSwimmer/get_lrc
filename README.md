@@ -1,5 +1,5 @@
 # Get_Lrc
-show current lrc of YesPlayMusic on status bar for Ubuntu gnome.
+show current lrc of Music Player such as Yesplaymusic and LXMusic on status bar for Ubuntu gnome.
 
 > Work for YesPlayMusic and LXMusic.
 

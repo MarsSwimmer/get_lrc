@@ -19,6 +19,9 @@ This project is written in Go.
 5. Lx Music need enable open api from settings.
 ![截图 2024-03-30 01-57-23](https://github.com/MarsSwimmer/get_lrc/assets/146618222/802df09c-f1fc-49f3-8f11-558fce85dc43)
 
+after setting open api, current lrc will show on status bar when play a music, like this:
+![截图 2024-03-30 02-37-15](https://github.com/MarsSwimmer/get_lrc/assets/146618222/686142ce-336f-42e4-9d0d-8f694bf955b7)
+
 
 ## Command Usage And Flags
 - Get current lrc sentence, auto choose source from all music player.
